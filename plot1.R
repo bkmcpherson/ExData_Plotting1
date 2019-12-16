@@ -1,3 +1,4 @@
+library("data.table")
 df <- data.table::fread("household_power_consumption.txt", na.strings = "?") #read data into df variable
 library("lubridate")
 df$Date <- lubridate::dmy(df$Date) #convert "Date" column to date class
